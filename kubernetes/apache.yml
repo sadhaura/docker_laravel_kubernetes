@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-laravel-server
+  labels:
+    app: my-laravel-server
+spec:
+  template:
+    metadata:
+      labels:
+        app: my-laravel-server
+    spec:
+      containers:
+      - name: my-laravel-server
+        image: 2034/docker-laravel
+
+        ports:
+        - containerPort: 80
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-laravel-server
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-laravel-server
+  ports:
+    - name: php-laravel
+      protocol: TCP
+      port: 80
+      targetPort: 80
+

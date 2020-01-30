@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-laravel
+data:
+#  MYSQL_HOST: mysql-service
+  MYSQL_DATABASE: yourdb-laravel
+  MYSQL_USER: user1-laravel
