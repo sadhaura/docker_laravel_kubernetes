@@ -38,7 +38,7 @@ git clone https://github.com/sadhaura/docker_laravel_kubernetes.git
 
 3. run the below command 
 
-kubectl create -f apache.yml,configmap.yml,secret.yml,mysql.yml,volume.yml'
+kubectl create -f apache.yml,configmap.yml,secret.yml,mysql.yml,volume.yml
 
 4. Your kubernetes deployments,pods,service will be up and running with persistent storage for database.
 
