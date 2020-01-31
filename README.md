@@ -42,7 +42,7 @@ kubectl create -f apache.yml,configmap.yml,secret.yml,mysql.yml,volume.yml
 
 4. Your kubernetes deployments,pods,service will be up and running with persistent storage for database.
 
-You can check access your website with EXTERNAL IP of kubernetes service().
+You can check access your website with EXTERNAL IP of kubernetes service(my-laravel-server).
 
  
 
